@@ -7,6 +7,13 @@
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended"
   ],
+  "prettier/prettier": [
+    "warn",
+    {
+        "endOfLine": "auto"
+    },
+    { "usePrettierrc": true }
+],
   "ignorePatterns": ["dist"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["react-refresh", "prettier", "eslint-plugin-import-helpers"],
