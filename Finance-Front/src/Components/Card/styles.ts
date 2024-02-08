@@ -35,6 +35,6 @@ span {
 strong {
     font-size: 1.5rem;
     font-weight: 500;
-    color: ${theme.colors.info};
+    color: ${(props) => variantColorMap[props.$variant]};
 }
 `
