@@ -20,6 +20,8 @@ import {
 import { ButtonIcon } from '../../Components/Button-icon';
 import { Card } from '../../Components/Card';
 import { Transaction } from '../../Components/Transaction';
+import { NewCategoryDialog } from '../../Components/NewCategory';
+import { NewTransactionDialog } from '../../Components/NewTransaction';
 
 export function Home() {
   return (
@@ -27,8 +29,8 @@ export function Home() {
       <Header>
         <Logo />
         <div>
-          <Button>Nova Transação</Button>
-          <Button>Nova Categoria</Button>
+          <NewCategoryDialog />
+          <NewTransactionDialog />
         </div>
       </Header>
       <Main>
