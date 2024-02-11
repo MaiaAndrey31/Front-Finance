@@ -15,6 +15,7 @@ import {
   Main,
   SearchTransaction,
   Section,
+  TransactionGroup,
 } from './styles';
 import { ButtonIcon } from '../../Components/Button-icon';
 import { Card } from '../../Components/Card';
@@ -96,11 +97,18 @@ export function Home() {
               subtitle="Receitas e Despesas no período"
             />
             <SearchTransaction>
-            <Input variant="black" placeholder="Procurar transação" />
-            <ButtonIcon />
+              <Input variant="black" placeholder="Procurar transação" />
+              <ButtonIcon />
             </SearchTransaction>
-            <Transaction id={1} amount={20000} date="02/11/2023" category={{title: 'Alimentação', color: '#ff44aa'}}
-            title='Mercado'  />
+            <TransactionGroup>
+              <Transaction
+                id={1}
+                amount={20000}
+                date="02/11/2023"
+                category={{ title: 'Alimentação', color: '#ff44aa' }}
+                title="Mercado"
+              />
+            </TransactionGroup>
           </header>
         </Aside>
       </Main>
