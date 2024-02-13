@@ -1,6 +1,7 @@
 import { ResponsivePie } from '@nivo/pie';
 import { useMemo } from 'react';
 import { theme } from '../../styles/themes';
+import { formatCurrency } from '../../utils/format-currency';
 
 const apiData = [
   {
@@ -50,7 +51,8 @@ export function CategoriesChart() {
       enableArcLabels={false}
       enableArcLinkLabels={false}
       colors={({ data }) => data.color}
-      margin={{top: 8}}
+      margin={{top: 20}}
+      valueFormat={formatCurrency}
       theme={{text: {
         fontFamily: 'Lexend',
         fontSize: 10,
@@ -73,7 +75,7 @@ export function CategoriesChart() {
             direction: 'row',
             justify: false,
             translateX: 0,
-            translateY: -28,
+            translateY: -20,
             itemWidth: 120,
             itemHeight: 16,
             itemTextColor: theme.colors.neutral,

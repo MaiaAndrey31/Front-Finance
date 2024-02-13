@@ -22,6 +22,7 @@ import { Transaction } from '../../Components/Transaction';
 import { NewCategoryDialog } from '../../Components/NewCategory';
 import { NewTransactionDialog } from '../../Components/NewTransaction';
 import { CategoriesChart } from '../../Components/CategoriesPieChart';
+import { EvolutionBarChart } from '../../Components/EvolutionBarChart[';
 
 export function Home() {
   return (
@@ -91,7 +92,9 @@ export function Home() {
                 <ButtonIcon />
               </ChartAction>
             </header>
-            <ChartContent></ChartContent>
+            <ChartContent>
+              <EvolutionBarChart />
+            </ChartContent>
           </ChartContainer>
         </Section>
         <Aside>
