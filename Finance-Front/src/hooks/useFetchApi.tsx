@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useCallback, useState } from "react";
+import { createContext, ReactNode, useCallback, useContext, useState } from "react";
 import { Category } from "../Services/apiTypes";
 import { CreateCategoryData } from "../validators/types";
 import { ApiService } from "../Services/api";
@@ -39,4 +39,8 @@ export function FetchAPIProvider({ children }: FetchAPIProviderProps) {
     )
 
 
+}
+
+export function useFetchAPI() : FetchAPIProps {
+    return useContext(FetchAPIContext)
 }
