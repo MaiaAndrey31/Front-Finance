@@ -1,8 +1,8 @@
 import { ResponsivePie } from '@nivo/pie';
 import { useMemo } from 'react';
 
-import { Expense } from '../../Services/apiTypes';
-import { theme } from '../../styles/themes';
+import { Expense } from '../../services/api-types';
+import { theme } from '../../styles/theme';
 import { formatCurrency } from '../../utils/format-currency';
 
 export type CategoryProps = {

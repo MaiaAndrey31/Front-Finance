@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 
-import { theme } from '../../styles/themes';
+import { theme } from '../../styles/theme';
 
 type CategoryBadgePros = {
   $color: string;

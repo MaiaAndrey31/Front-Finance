@@ -4,13 +4,13 @@ import dayjs from 'dayjs';
 import { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-
+import { useFetchAPI } from '../../hooks/useFetchAPI';
 import { createTransactionSchema } from '../../validators/schemas';
 import { CreateTransactionData } from '../../validators/types';
-import { Button } from '../Button';
-import { Dialog } from '../Dialog';
-import { Input } from '../Input';
-import { Title } from '../Title';
+import { Button } from '../button';
+import { Dialog } from '../dialog';
+import { Input } from '../input';
+import { Title } from '../title';
 import {
   Container,
   Content,
@@ -20,7 +20,6 @@ import {
   RadioForm,
   RadioGroup,
 } from './styles';
-import { useFetchAPI } from '../../hooks/useFetchApi';
 
 export function CreateTransactionDialog() {
   const { categories, fetchCategories, createTransaction } = useFetchAPI();

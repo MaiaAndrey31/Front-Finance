@@ -5,20 +5,20 @@ import dayjs from 'dayjs';
 import { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-import { ButtonIcon } from '../../Components/Button-icon';
-import { Card } from '../../Components/Card';
+import { ButtonIcon } from '../../components/button-icon';
+import { Card } from '../../components/card';
 import {
   CategoriesPieChart,
   CategoryProps,
-} from '../../Components/CategoriesPieChart';
-import { CreateCategoryDialog } from '../../Components/NewCategory';
-import { CreateTransactionDialog } from '../../Components/NewTransaction';
-import { FinancialEvolutionBarChart } from '../../Components/EvolutionBarChart';
-import { Input } from '../../Components/Input';
-import { Logo } from '../../Components/Logo';
-import { Title } from '../../Components/Title';
-import { Transaction } from '../../Components/Transaction';
-import { useFetchAPI } from '../../hooks/useFetchApi';
+} from '../../components/categories-pie-chart';
+import { CreateCategoryDialog } from '../../components/create-category-dialog';
+import { CreateTransactionDialog } from '../../components/create-transaction-dialog';
+import { FinancialEvolutionBarChart } from '../../components/financial-evolution-bar-chart';
+import { Input } from '../../components/input';
+import { Logo } from '../../components/logo';
+import { Title } from '../../components/title';
+import { Transaction } from '../../components/transaction';
+import { useFetchAPI } from '../../hooks/useFetchAPI';
 import { transactionsFilterSchema } from '../../validators/schemas';
 import {
   FinancialEvolutionFilterData,

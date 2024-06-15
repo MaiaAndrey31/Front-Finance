@@ -4,6 +4,7 @@ import { Container } from './styles';
 type InputProps = ComponentProps<'input'> & {
   label?: string;
   variant?: 'black' | 'dark';
+  error?: string;
 };
 
 export const Input =

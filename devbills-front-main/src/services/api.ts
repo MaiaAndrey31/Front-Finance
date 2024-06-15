@@ -10,7 +10,7 @@ import {
   FinancialEvolutionFilters,
   Transaction,
   TransactionsFilter,
-} from './apiTypes';
+} from './api-types';
 
 export class APIService {
   private static client = axios.create({
